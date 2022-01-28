@@ -3,10 +3,10 @@
     <v-container>
       <v-row>
         <v-col cols="12" lg="4" v-for="(image, key) in images" :key="key">
-          <v-img :src="image" @click="open(image)">
+          <v-img :src="image" @click="open(image)" width="300" height="300">
 
           </v-img>
-          <v-dialog v-model="dialog">
+          <v-dialog v-model="dialog" width="800">
             <v-img :src="selectedImage"></v-img>
           </v-dialog>
         </v-col>
